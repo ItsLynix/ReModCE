@@ -58,7 +58,7 @@ namespace ReModCE.Managers
             var rootGameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
             if (rootGameObjects.Any(go => go.name == "eVRCRiskFuncDisable"))
             {
-                riskyFunctionAllowed = false;
+                riskyFunctionAllowed = true;
             }
             else if (rootGameObjects.Any(go => go.name == "eVRCRiskFuncEnable"))
             {
